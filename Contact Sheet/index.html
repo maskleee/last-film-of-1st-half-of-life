@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "html">
+
+<html lang="sv">
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="generator" content="Capture One http://phaseone.com/">
+        <meta name="author" content="">
+        <script src="scripts/jquery.min.js"></script>
+        <script src="scripts/galleria.js"></script>
+        <style type="text/css">
+                html, body { background-color: #000;}
+            </style>
+        <link rel="stylesheet" type="text/css" media="screen, print" href="theme/fullscreendark_contactsheet.css">
+        <!--[if IE]>
+			<link rel="stylesheet" type="text/css" media="screen, print" href="theme/fullscreendark_contactsheet_ie.css">
+			<![endif]-->
+    </head>
+    <body>
+        <div id="toggle-info-button"></div>
+        <div id="info-panel" style="left:-300px; opacity:0;">
+            <div id="wcs-title"></div>
+            <div id="wcs-description"></div>
+            <div id="contact-info-box">Copyright © <a href="" id="wcs-contact-link"></a>
+            </div>
+        </div>
+        <div id="galleria">
+            <a href="photos/previews/000011270001.jpg.p.jpg">
+                <img src="photos/thumbnails/000011270001.jpg.t.jpg" id="CE852068-C03C-4C77-A135-5AADF37DD298" title="000011270001">
+            </a>
+            <a href="photos/previews/000011270002.jpg.p.jpg">
+                <img src="photos/thumbnails/000011270002.jpg.t.jpg" id="B3B8CB35-0A0E-4522-A3C3-F6BC28EE46BE" title="000011270002">
+            </a>
+            <a href="photos/previews/000011270003.jpg.p.jpg">
+                <img src="photos/thumbnails/000011270003.jpg.t.jpg" id="D885E0A7-A14B-46F6-A038-AD9438788DC8" title="000011270003">
+            </a>
+            <a href="photos/previews/000011270004.jpg.p.jpg">
+                <img src="photos/thumbnails/000011270004.jpg.t.jpg" id="70ED21DC-28D0-4A65-98D4-8BBC92A13A61" title="000011270004">
+            </a>
+            <a href="photos/previews/000011270005.jpg.p.jpg">
+                <img src="photos/thumbnails/000011270005.jpg.t.jpg" id="19F0DA44-822F-4A2D-94E3-95B6673DF5DD" title="000011270005">
+            </a>
+            <a href="photos/previews/000011270006.jpg.p.jpg">
+                <img src="photos/thumbnails/000011270006.jpg.t.jpg" id="1A00FB91-DAE0-46C1-854F-0FA8A87659B1" title="000011270006">
+            </a>
+            <a href="photos/previews/000011270007.jpg.p.jpg">
+                <img src="photos/thumbnails/000011270007.jpg.t.jpg" id="19823433-66CF-4833-941E-A352DC26466C" title="000011270007">
+            </a>
+            <a href="photos/previews/000011270008.jpg.p.jpg">
+                <img src="photos/thumbnails/000011270008.jpg.t.jpg" id="E9718078-9ABB-4CD0-9CAE-CE57F4F09A43" title="000011270008">
+            </a>
+            <a href="photos/previews/000011270009.jpg.p.jpg">
+                <img src="photos/thumbnails/000011270009.jpg.t.jpg" id="30C2A478-291C-4DAD-B6DB-A177B2D3E50D" title="000011270009">
+            </a>
+            <a href="photos/previews/000011270010.jpg.p.jpg">
+                <img src="photos/thumbnails/000011270010.jpg.t.jpg" id="7B62FBB8-13F2-44A7-9A2C-3F80317B76BD" title="000011270010">
+            </a>
+            <a href="photos/previews/000011270011.jpg.p.jpg">
+                <img src="photos/thumbnails/000011270011.jpg.t.jpg" id="1E7F6952-00A7-4716-AEE9-83DBFF890BB1" title="000011270011">
+            </a>
+            <a href="photos/previews/000011270012.jpg.p.jpg">
+                <img src="photos/thumbnails/000011270012.jpg.t.jpg" id="E9B5E552-363E-4004-BC93-4A8F4D6D906A" title="000011270012">
+            </a>
+            <a href="photos/previews/000011270013.jpg.p.jpg">
+                <img src="photos/thumbnails/000011270013.jpg.t.jpg" id="E8E36E76-DD41-47C6-95C9-7795CC082D74" title="000011270013">
+            </a>
+            <a href="photos/previews/000011270014.jpg.p.jpg">
+                <img src="photos/thumbnails/000011270014.jpg.t.jpg" id="3BB3E8C4-3D20-4895-88FC-C6ED73AB7B5A" title="000011270014">
+            </a>
+            <a href="photos/previews/000011270015.jpg.p.jpg">
+                <img src="photos/thumbnails/000011270015.jpg.t.jpg" id="E6F49F9C-B357-4ED1-9063-0C3345E6CE2B" title="000011270015">
+            </a>
+            <a href="photos/previews/000011270016.jpg.p.jpg">
+                <img src="photos/thumbnails/000011270016.jpg.t.jpg" id="126A52D8-85D3-4B2C-ABA8-5598B8C8D06D" title="000011270016">
+            </a>
+        </div>
+        <script type="text/javascript">
+				Galleria.loadTheme('theme/galleria.fullscreen_dark.js');
+				$('#galleria').galleria();					
+				
+				function toggleInfoPanel(showIt) {
+					var infoPanel = $("#info-panel");
+					var toggleButton = $("#toggle-info-button");
+					 
+					if (showIt) {				
+						toggleButton.fadeOut("fast", function(){
+							toggleButton.addClass("panel-open").fadeIn();
+						});
+						
+						infoPanel.animate({
+							opacity: 1,
+							left: "0px"
+						}, "fast");
+					} else {
+							
+						toggleButton.fadeOut("fast", function(){
+							toggleButton.removeClass("panel-open").fadeIn();
+						});
+						
+						infoPanel.animate({
+							opacity: 0,			
+							left: "-300px"
+						}, "fast");			
+					}	
+				}
+				toggleInfoPanel(false);	
+				//close panel on click outside
+				$('body').click(function() { 
+					if ($("#toggle-info-button").hasClass("panel-open")) 
+						toggleInfoPanel(false); 
+				});
+				$('#infoPanel').click(function(event){ event.stopPropagation(); });
+				$("#toggle-info-button").click(function(event){		
+					toggleInfoPanel( $(this).hasClass("panel-open") == false);
+					event.stopPropagation(); 	
+				});				
+			</script>
+    </body>
+</html>
